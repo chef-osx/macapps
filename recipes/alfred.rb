@@ -23,6 +23,6 @@ remote_file "#{Chef::Config[:file_cache_path]}/Alfred_2.1.1_227.zip" do
 end
 
 execute "unzip-alfred" do
-  command "unzip #{Chef::Config[:file_cache_path]}/Alfred_2.1.1_227 -d /Applications"
+  command "unzip #{Chef::Config[:file_cache_path]}/Alfred_2.1.1_227.zip -d /Applications"
   action :nothing
 end
