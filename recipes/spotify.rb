@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: ud-macapps
-# Recipe:: alfred
+# Recipe:: spotify
 #
 # Copyright 2013, Urbandecoder Labs LLC
 #
@@ -16,13 +16,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-remote_file "#{Chef::Config[:file_cache_path]}/Alfred_2.1.1_227.zip" do
-  source 'http://cachefly.alfredapp.com/Alfred_2.1.1_227.zip'
-  checksum 'd19fe7441c6741bf663521e561b842f35707b1e83de21ca195aa033cade66d1b'
-  notifies :run, "execute[unzip-alfred]", :immediately
+remote_file "#{Chef::Config[:file_cache_path]}/SpotifyInstaller.zip" do
+  source 'http://download.spotify.com/SpotifyInstaller.zip'
+  notifies :run, "execute[unzip-spotify]", :immediately
 end
 
-execute "unzip-alfred" do
-  command "unzip #{Chef::Config[:file_cache_path]}/Alfred_2.1.1_227 -d /Applications"
+execute "unzip-spotify" do
+  command "unzip #{Chef::Config[:file_cache_path]}/SpotifyInstaller.zip -d /Applications"
   action :nothing
 end
