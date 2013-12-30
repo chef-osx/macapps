@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: ud-macapps
-# Recipe:: xquartz
+# Recipe:: adobereader
 #
 # Copyright 2013, Urbandecoder Labs LLC
 #
@@ -16,11 +16,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_package "XQuartz" do
-  source "http://xquartz.macosforge.org/downloads/SL/XQuartz-2.7.5.dmg"
+dmg_package "Adobe Reader XI Installer" do
+  source "https://ardownload.adobe.com/pub/adobe/reader/mac/11.x/11.0.04/en_US/AdbeRdr11004_en_US.dmg"
   action :install
-  volumes_dir "XQuartz-2.7.5"
-  checksum "4382ff78cef5630fb6b8cc982da2e5a577d8cc5dddd35a493b50bad2fcf5e34a"
+  volumes_dir "AdbeRdr11004_en_US"
+  checksum "75ffa292c15328bdb09043e19759f4053585444614433fc8ea05a3ed55f9e4e0"
   type "pkg"
-  package_id "org.macosforge.xquartz.pkg"
+  package_id "com.adobe.acrobat.reader.11004.reader.app.pkg.en_US"
 end

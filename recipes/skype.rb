@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: ud-macapps
-# Recipe:: xquartz
+# Recipe:: skype
 #
 # Copyright 2013, Urbandecoder Labs LLC
 #
@@ -16,11 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_package "XQuartz" do
-  source "http://xquartz.macosforge.org/downloads/SL/XQuartz-2.7.5.dmg"
+dmg_properties = node['ud-macapps']['skype']['dmg']
+
+dmg_package 'Skype' do
+  source dmg_properties['source']
+  checksum dmg_properties['checksum']
   action :install
-  volumes_dir "XQuartz-2.7.5"
-  checksum "4382ff78cef5630fb6b8cc982da2e5a577d8cc5dddd35a493b50bad2fcf5e34a"
-  type "pkg"
-  package_id "org.macosforge.xquartz.pkg"
 end

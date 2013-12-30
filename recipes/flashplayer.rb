@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: ud-macapps
-# Recipe:: xquartz
+# Recipe:: flashplayer
 #
 # Copyright 2013, Urbandecoder Labs LLC
 #
@@ -16,11 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_package "XQuartz" do
-  source "http://xquartz.macosforge.org/downloads/SL/XQuartz-2.7.5.dmg"
+dmg_package "Install Adobe Flash Player" do
+  source "https://fpdownload.adobe.com/pub/flashplayer/current/licensing/mac/install_flash_player_11_osx.dmg"
   action :install
-  volumes_dir "XQuartz-2.7.5"
-  checksum "4382ff78cef5630fb6b8cc982da2e5a577d8cc5dddd35a493b50bad2fcf5e34a"
-  type "pkg"
-  package_id "org.macosforge.xquartz.pkg"
+  volumes_dir "Flash Player"
+  checksum "e6149cda4782d71c9e26b345ec61a94600a3cf995d8ec7d6a8b40af5ae1cf2df"
+  package_id "com.adobe.pkg.FlashPlayer"
 end
