@@ -16,12 +16,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node['ud-macapps']['evernote']['dmg']
+dmg_properties = node['ud-macapps']['origin']['dmg']
 
-dmg_package "Evernote" do
-  volumes_dir "Evernote"
+dmg_package "Origin" do
+  volumes_dir "Origin"
   source dmg_properties['source']
   checksum dmg_properties['checksum']
-  accept_eula true
   action :install
 end
