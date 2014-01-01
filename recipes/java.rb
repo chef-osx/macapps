@@ -16,16 +16,30 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-remote_file "#{Chef::Config[:file_cache_path]}/jdk-7u45-macosx-x64.dmg" do
-  source "http://download.oracle.com/otn-pub/java/jdk/7u45-b18/jdk-7u45-macosx-x64.dmg"
-  checksum '841c4700ca55d199f7ad90fdb487a81ee59d77dabbb14f6e40f9d3bec7a34824'
-  headers 'Cookie' => 'oraclelicensejdk-7u45-b18-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com'
-  action :create
+dmg_properties = node["ud-macapps"]["java"]["dmg"]
+dmg_source = dmg_properties["source"]
+dmg_volumes_dir = dmg_properties["volumes_dir"]
+dmg_checksum = dmg_properties["checksum"]
+
+dmg_package "JavaForOSX" do
+  source dmg_source
+  volumes_dir dmg_volumes_dir
+  action :install
+  type "pkg"
+  package_id "com.apple.pkg.JavaForMacOSX107"
+  checksum dmg_checksum
 end
 
-dmg_package 'JDK 7 Update 45' do
-  source "file://#{Chef::Config[:file_cache_path]}/jdk-7u45-macosx-x64.dmg"
-  type "pkg"
-  action :install
-  package_id 'com.oracle.jdk7u45'
+node['ud-macapps']['java']['additional'].each do |pkg, pkgdata|
+  remote_file "#{Chef::Config[:file_cache_path]}/#{pkg}.pkg" do
+    source pkgdata['source']
+    checksum pkgdata['checksum']
+    action :create
+  end
+
+  execute "install-#{pkg}" do
+    command "installer -pkg #{Chef::Config[:file_cache_path]}/#{pkg}.pkg -target /"
+    action :run
+    not_if "pkgutil --pkgs=#{pkgdata['package_id']}"
+  end
 end
