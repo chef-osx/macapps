@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node['ud-macapps']['dropbox']['dmg']
+dmg_properties = node['ud-macapps']['firefox']['dmg']
 
 dmg_package "Firefox" do
   source dmg_properties['source']
