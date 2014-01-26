@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ud-macapps
+# Cookbook Name:: macapps
 # Recipe:: arduino
 #
 # Copyright 2013, Urbandecoder Labs LLC
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe 'ud-macapps::java'
+include_recipe 'macapps::java'
 
 remote_file "#{Chef::Config[:file_cache_path]}/arduino-1.0.5-macosx.zip" do
   source 'http://arduino.googlecode.com/files/arduino-1.0.5-macosx.zip'
