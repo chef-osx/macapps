@@ -17,10 +17,10 @@
 # limitations under the License.
 
 dmg_package "Adobe Reader XI Installer" do
-  source "https://ardownload.adobe.com/pub/adobe/reader/mac/11.x/11.0.04/en_US/AdbeRdr11004_en_US.dmg"
+  source "https://ardownload.adobe.com/pub/adobe/reader/mac/11.x/11.0.06/en_US/AdbeRdr11006_en_US.dmg"
   action :install
   volumes_dir "AdbeRdr11004_en_US"
-  checksum "75ffa292c15328bdb09043e19759f4053585444614433fc8ea05a3ed55f9e4e0"
+  checksum "5d057ea44692036d6b7b2eb3b7f906baac23aca95c1b417535a33527a252929a"
   type "pkg"
-  package_id "com.adobe.acrobat.reader.11004.reader.app.pkg.en_US"
+  package_id "com.adobe.acrobat.reader.11006.reader.app.pkg.en_US"
 end
