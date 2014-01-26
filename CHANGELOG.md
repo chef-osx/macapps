@@ -1,13 +1,14 @@
-ud-macapps CHANGELOG
+macapps CHANGELOG
 ====================
 
-This file is used to list changes made in each version of the ud-macapps cookbook.
+This file is used to list changes made in each version of the macapps cookbook.
 
-0.1.0
+1.0.2
 -----
-- [your_name] - Initial release of ud-macapps
 
-- - -
-Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
+- Public release: correctly remove prefix "ud-" from all recipes & attributes
+- Fix bugs in Adobe Reader XI name
 
-The [Github Flavored Markdown page](http://github.github.com/github-flavored-markdown/) describes the differences between markdown on github and standard markdown.
+1.0.0
+-----
+- Initial release
