@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ud-macapps
+# Cookbook Name:: macapps
 # Recipe:: google_voice_and_video
 #
 # Copyright 2013, Urbandecoder Labs LLC
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node['ud-macapps']['google_voice_and_video']['dmg']
+dmg_properties = node['macapps']['google_voice_and_video']['dmg']
 
 dmg_package 'Google Voice and Video' do
   source dmg_properties['source']

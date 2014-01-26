@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ud-macapps
+# Cookbook Name:: macapps
 # Recipe:: default
 #
 # Copyright 2013, Urbandecoder Labs LLC

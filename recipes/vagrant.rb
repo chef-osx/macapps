@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ud-macapps
+# Cookbook Name:: macapps
 # Recipe:: vagrant
 #
 # Copyright 2013, Urbandecoder Labs LLC
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node['ud-macapps']['vagrant']['dmg']
+dmg_properties = node['macapps']['vagrant']['dmg']
 
 dmg_package "Vagrant" do
   source dmg_properties['source']

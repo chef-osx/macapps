@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ud-macapps
+# Cookbook Name:: macapps
 # Recipe:: java
 #
 # Copyright 2013, Urbandecoder Labs LLC
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node["ud-macapps"]["java"]["dmg"]
+dmg_properties = node["macapps"]["java"]["dmg"]
 dmg_source = dmg_properties["source"]
 dmg_volumes_dir = dmg_properties["volumes_dir"]
 dmg_checksum = dmg_properties["checksum"]
@@ -30,7 +30,7 @@ dmg_package "JavaForOSX" do
   checksum dmg_checksum
 end
 
-node['ud-macapps']['java']['additional'].each do |pkg, pkgdata|
+node['macapps']['java']['additional'].each do |pkg, pkgdata|
   remote_file "#{Chef::Config[:file_cache_path]}/#{pkg}.pkg" do
     source pkgdata['source']
     checksum pkgdata['checksum']

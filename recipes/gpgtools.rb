@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ud-macapps
+# Cookbook Name:: macapps
 # Recipe:: gpgtools
 #
 # Copyright 2013, Urbandecoder Labs LLC
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node['ud-macapps']['gpgtools']['dmg']
+dmg_properties = node['macapps']['gpgtools']['dmg']
 
 # Yeah, it's a weird pkg name on the DMG
 dmg_package "Install" do

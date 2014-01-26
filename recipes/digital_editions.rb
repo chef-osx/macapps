@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ud-macapps
+# Cookbook Name:: macapps
 # Recipe:: digital_editions
 #
 # Copyright 2014, Urbandecoder Labs LLC
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node['ud-macapps']['digital_editions']['dmg']
+dmg_properties = node['macapps']['digital_editions']['dmg']
 
 dmg_package "Digital Editions 2.0 Installer" do
   volumes_dir "ADE 2.0"

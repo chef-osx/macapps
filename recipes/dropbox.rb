@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ud-macapps
+# Cookbook Name:: macapps
 # Recipe:: dropbox
 #
 # Copyright 2013, Urbandecoder Labs LLC
@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node['ud-macapps']['dropbox']['dmg']
+dmg_properties = node['macapps']['dropbox']['dmg']
 
 dmg_package 'Dropbox' do
   volumes_dir 'Dropbox Installer'
