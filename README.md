@@ -1,12 +1,16 @@
-UrbanDecoder Labs Macintosh Apps Cookbook
-=========================================
+Macintosh Apps Cookbook
+=======================
 
-Installs applications common to UrbanDecoder Labs workstations.
+Installs applications frequently seen on Mac OS X workstations.
+
+As individual recipes evolve, they will be spun off into their
+own cookbooks, but it seemed senseless to create 50 different cookbooks
+up front.
 
 Requirements
 ------------
 
-* Mac OS X Mavericks
+* Mac OS X
 
 #### Cookbooks
 
@@ -14,60 +18,31 @@ Requirements
 
 Attributes
 ----------
-TODO: List you cookbook attributes here.
 
-e.g.
-#### ud-macapps::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['ud-macapps']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+Too many to list, but usually there's a URL and checksum for each
+piece of software.
 
 Usage
 -----
-#### ud-macapps::default
-TODO: Write usage instructions for each cookbook.
 
-e.g.
-Just include `ud-macapps` in your node's `run_list`:
-
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[ud-macapps]"
-  ]
-}
-```
+Include the recipe corresponding to the application you want to install
+in your run_list.
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
 
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
-4. Write tests for your change (if applicable)
-5. Run the tests, ensuring they all pass
-6. Submit a Pull Request using Github
+4. Submit a Pull Request using Github
 
 License and Authors
 -------------------
-* Authors: Julian C. Dunn (<jdunn@aquezada.com>)
+
+* Author: Julian C. Dunn (<jdunn@getchef.com>)
 
 ```text
-Copyright:: 2013, UrbanDecoder Labs
+Copyright:: 2013-2014 Chef Software, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may
 not use this file except in compliance with the License. You may obtain
