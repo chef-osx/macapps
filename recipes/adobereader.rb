@@ -19,7 +19,7 @@
 dmg_package "Adobe Reader XI Installer" do
   source "https://ardownload.adobe.com/pub/adobe/reader/mac/11.x/11.0.06/en_US/AdbeRdr11006_en_US.dmg"
   action :install
-  volumes_dir "AdbeRdr11004_en_US"
+  volumes_dir "AdbeRdr11006_en_US"
   checksum "5d057ea44692036d6b7b2eb3b7f906baac23aca95c1b417535a33527a252929a"
   type "pkg"
   package_id "com.adobe.acrobat.reader.11006.reader.app.pkg.en_US"
