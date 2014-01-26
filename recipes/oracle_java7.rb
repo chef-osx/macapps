@@ -16,16 +16,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-remote_file "#{Chef::Config[:file_cache_path]}/jdk-7u45-macosx-x64.dmg" do
-  source "http://download.oracle.com/otn-pub/java/jdk/7u45-b18/jdk-7u45-macosx-x64.dmg"
-  checksum '841c4700ca55d199f7ad90fdb487a81ee59d77dabbb14f6e40f9d3bec7a34824'
-  headers 'Cookie' => 'oraclelicensejdk-7u45-b18-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com'
+remote_file "#{Chef::Config[:file_cache_path]}/jdk-7u51-macosx-x64.dmg" do
+  source "http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-macosx-x64.dmg"
+  checksum '1312b0553bd37a232114637f05b036a6fd5d444e653adef7230ba141328f7734'
+  headers 'Cookie' => 'oraclelicensejdk-7u51-b13-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com'
   action :create
 end
 
-dmg_package 'JDK 7 Update 45' do
-  source "file://#{Chef::Config[:file_cache_path]}/jdk-7u45-macosx-x64.dmg"
+dmg_package 'JDK 7 Update 51' do
+  source "file://#{Chef::Config[:file_cache_path]}/jdk-7u51-macosx-x64.dmg"
   type "pkg"
   action :install
-  package_id 'com.oracle.jdk7u45'
+  package_id 'com.oracle.jdk7u51'
 end
