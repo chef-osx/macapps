@@ -1,2 +1,2 @@
-default['macapps']['firefox']['dmg']['source'] = 'http://download.mozilla.org/?product=firefox-26.0&os=osx&lang=en-US'
-default['macapps']['firefox']['dmg']['checksum'] = '0ea2b4cc1c56603d8449261ec2d97dba955056eb9029adfb85d002f6cd8a8952'
+default['macapps']['firefox']['dmg']['source'] = 'http://download.mozilla.org/?product=firefox-27.0.1&os=osx&lang=en-US'
+default['macapps']['firefox']['dmg']['checksum'] = '49aab0add0a2323380539cb47bc2d901a48937d04d35882c05726c502eafda24'
