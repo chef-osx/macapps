@@ -19,7 +19,7 @@
 remote_file "#{Chef::Config[:file_cache_path]}/jdk-7u51-macosx-x64.dmg" do
   source "http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-macosx-x64.dmg"
   checksum '1312b0553bd37a232114637f05b036a6fd5d444e653adef7230ba141328f7734'
-  headers 'Cookie' => 'oraclelicensejdk-7u51-b13-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com'
+  headers 'Cookie' => 'oraclelicense=accept-securebackup-cookie'
   action :create
 end
 
