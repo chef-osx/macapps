@@ -1,2 +1,2 @@
-default['macapps']['evernote']['dmg']['source'] = 'https://evernote.com/download/get.php?file=EvernoteMac'
-default['macapps']['evernote']['dmg']['checksum'] = '3e56cdbc1f49d3982068e9ced5f5b2f7bc09ff641ab4aa361e8aa617b2adc5ba'
+default['macapps']['evernote']['dmg']['source'] = 'http://cdn1.evernote.com/mac/release/Evernote_402491.dmg'
+default['macapps']['evernote']['dmg']['checksum'] = 'f08ee862bf8ad4739d7cd7063476fef600366fdeb0b8f88f2dd7f9429779baf5'
