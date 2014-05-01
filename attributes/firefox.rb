@@ -1,2 +1,2 @@
-default['macapps']['firefox']['dmg']['source'] = 'http://download.mozilla.org/?product=firefox-28.0-SSL&os=osx&lang=en-US'
-default['macapps']['firefox']['dmg']['checksum'] = '287a90c5d067420fddbee365f4019c6ad5e931678955c5d36c6f4a0033616f9b'
+default['macapps']['firefox']['dmg']['source'] = 'https://download-installer.cdn.mozilla.net/pub/firefox/releases/29.0/mac/en-US/Firefox%2029.0.dmg'
+default['macapps']['firefox']['dmg']['checksum'] = 'b2606d2e7deb983d60db089f0c0af9f4a7f00547c29b25fbce464b477018e0af'
