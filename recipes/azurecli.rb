@@ -24,4 +24,5 @@ dmg_package "Install Command Line Interface" do
   checksum dmg_properties['checksum']
   action :install
   type "pkg"
+  package_id 'com.microsoft.azure.cli.pkg'
 end
