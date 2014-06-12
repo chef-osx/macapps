@@ -1,2 +1,2 @@
-default['macapps']['calibre']['dmg']['source'] = 'http://files.calibre-ebook.com/1.19.0/calibre-1.19.0.dmg'
-default['macapps']['calibre']['dmg']['checksum'] = 'f70a41e8bb866eb0a58187c76384a57d82e187bb67671970782cae27b78f08d3'
+default['macapps']['calibre']['dmg']['source'] = 'http://files.calibre-ebook.com/1.39.0/calibre-1.39.0.dmg'
+default['macapps']['calibre']['dmg']['checksum'] = 'ff9415a379fa8b9b2303b3ab82ece2b9e1f43d94a8a1523d68b857b2f2c7fe9e'
