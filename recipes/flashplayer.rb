@@ -17,9 +17,9 @@
 # limitations under the License.
 
 dmg_package "Install Adobe Flash Player" do
-  source "https://fpdownload.adobe.com/pub/flashplayer/current/licensing/mac/install_flash_player_13_osx.dmg"
+  source "https://fpdownload.adobe.com/pub/flashplayer/current/licensing/mac/install_flash_player_14_osx.dmg"
   action :install
   volumes_dir "Flash Player"
-  checksum "fc00856e77e55fadf8574212430aff6aaa3a7f3e12eb431cd505a54d02dec2fe"
+  checksum "a4cec0ec8bc84968a671adc1604b3bad2efaf972400ba6e9ee90c2c9064403fb"
   package_id "com.adobe.pkg.FlashPlayer"
 end
