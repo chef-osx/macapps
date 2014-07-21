@@ -1,8 +1,8 @@
 #
 # Cookbook Name:: macapps
-# Recipe:: smcfancontrol
+# Recipe:: audacity
 #
-# Copyright 2014, Urbandecoder Labs LLC
+# Copyright 2014, Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,14 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-remote_file "#{Chef::Config[:file_cache_path]}/smcfancontrol_2_4.zip" do
-  source 'http://www.eidac.de/smcfancontrol/smcfancontrol_2_4.zip'
-  checksum 'f72713be5c3d8bf4ecbf7999af8dc66d23d4f5e22c49b648a485351172cb1ac3'
-  notifies :run, "execute[unzip-smcfancontrol]", :immediately
-end
+dmg_properties = node['macapps']['audacity']['dmg']
 
-execute "unzip-smcfancontrol" do
-  # Don't extract the readme and all that other crap
-  command "unzip #{Chef::Config[:file_cache_path]}/smcfancontrol_2_4.zip smcFanControl.app -d /Applications"
-  action :nothing
+dmg_package "Audacity" do
+  source dmg_properties['source']
+  checksum dmg_properties['checksum']
+  action :install
 end
