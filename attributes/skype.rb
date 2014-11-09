@@ -1,2 +1,2 @@
-default['macapps']['skype']['dmg']['source'] = 'http://download.skype.com/macosx/Skype_6.12.59.431.dmg'
-default['macapps']['skype']['dmg']['checksum'] = '53ef4fb3c2e5a1a7c0c02d299c6fe118f3a50ca306e856e5e67e2968de46cd16'
+default['macapps']['skype']['dmg']['source'] = 'http://download.skype.com/macosx/31b288c8dce709adfb80b0b1bd822c8d/Skype_7.1.665.dmg'
+default['macapps']['skype']['dmg']['checksum'] = '60c466c1eb9f02355f18c913d7999f7f67ad156f6b9d1a8169ca49942dd055ba'
