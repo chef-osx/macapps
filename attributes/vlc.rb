@@ -1,2 +1,2 @@
-default['macapps']['vlc']['dmg']['version'] = '2.1.2'
-default['macapps']['vlc']['dmg']['checksum'] = 'e6d745adfc22c8ad380d859e4e9efc5a7dac806939bed8147ac48331a891b618'
+default['macapps']['vlc']['dmg']['version'] = '2.1.5'
+default['macapps']['vlc']['dmg']['checksum'] = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
