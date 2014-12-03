@@ -19,7 +19,7 @@
 dmg_properties = node['macapps']['calibre']['dmg']
 
 dmg_package "calibre" do
-  volumes_dir "calibre-1.18.0"
+  volumes_dir "calibre-1.21.0"
   source dmg_properties['source']
   checksum dmg_properties['checksum']
   action :install
