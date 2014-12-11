@@ -23,6 +23,6 @@ remote_file "#{Chef::Config[:file_cache_path]}/caffeine.zip" do
 end
 
 execute "unzip-caffeine" do
-  command "unzip #{Chef::Config[:file_cache_path]}/caffeine.zip -d /Applications"
+  command "unzip -o #{Chef::Config[:file_cache_path]}/caffeine.zip -d /Applications"
   action :nothing
 end
