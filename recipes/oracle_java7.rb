@@ -27,5 +27,5 @@ dmg_package 'JDK 7' do
   source "file://#{Chef::Config[:file_cache_path]}/jdk-macosx-x64.dmg"
   type 'pkg'
   action :install
-  package_id node'macapps']['oracle_java7']['package_id']
+  package_id node['macapps']['oracle_java7']['package_id']
 end
