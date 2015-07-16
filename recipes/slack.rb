@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-remote_file "#{Chef::Config[:file_cache_path]}/slack-#{node['macapps']['slack']['version']}.zip"
+remote_file "#{Chef::Config[:file_cache_path]}/slack-#{node['macapps']['slack']['version']}.zip" do
   source "https://slack-ssb-updates.s3.amazonaws.com/mac_public_releases/slack-#{node['macapps']['slack']['version']}.zip"
   checksum node['macapps']['slack']['checksum']
   notifies :run, "execute[unzip-slack]", :immediately
