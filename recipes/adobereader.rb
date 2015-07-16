@@ -24,3 +24,12 @@ dmg_package "Adobe Reader XI Installer" do
   type "pkg"
   package_id "com.adobe.acrobat.reader.11007.reader.app.pkg.en_US"
 end
+
+dmg_package "AdbeRdrUpd11011" do
+  source "http://ardownload.adobe.com/pub/adobe/reader/mac/11.x/11.0.11/misc/AdbeRdrUpd11011.dmg"
+  action :install
+  volumes_dir "AdbeRdrUpd11011"
+  checksum "44a36ee4261177074e13f078da3ca24e12002a30ac821dc7901112d31642646b"
+  type "pkg"
+  package_id "com.adobe.acrobat.a11.AdbeRdrUpd11011"
+end
