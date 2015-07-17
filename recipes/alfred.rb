@@ -16,13 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-remote_file "#{Chef::Config[:file_cache_path]}/Alfred_2.6_374.zip" do
-  source 'http://cachefly.alfredapp.com/Alfred_2.6_374.zip'
-  checksum 'cc9f8791454056bcd0cd9ac94ae3604aa2bda4014a453c3e0cf5818a18a85eee'
+remote_file "#{Chef::Config[:file_cache_path]}/Alfred_2.7.1_387.zip"
+  source 'http://cachefly.alfredapp.com/Alfred_2.7.1_387.zip'
+  checksum 'a3738d0513d736918a6d71535ef3d85dd184af267c05698e49ac4c6b48f38e17'
   notifies :run, "execute[unzip-alfred]", :immediately
 end
 
 execute "unzip-alfred" do
-  command "unzip -o #{Chef::Config[:file_cache_path]}/Alfred_2.6_374.zip -d /Applications"
+  command "unzip -o #{Chef::Config[:file_cache_path]}/Alfred_2.7.1_387.zip -d /Applications"
   action :nothing
 end
