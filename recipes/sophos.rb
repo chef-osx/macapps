@@ -23,6 +23,6 @@ remote_file "#{Chef::Config[:file_cache_path]}/savosx_he_r.zip" do
 end
 
 execute "unzip-sophos" do
-  command "unzip #{Chef::Config[:file_cache_path]}/savosx_he_r.zip -d /Applications"
+  command "unzip -o #{Chef::Config[:file_cache_path]}/savosx_he_r.zip -d /Applications"
   action :nothing
 end
