@@ -1,2 +1,2 @@
 default['macapps']['zoomus']['pkg']['source'] = 'http://d11yldzmag5yn.cloudfront.net/prod/3.5.11039.0317/zoomusInstaller.pkg'
-default['macapps']['zoomus']['pkg']['checksum'] = '9c76eb2da91e226189347d4cbfce3bc911b265a78b781a9744be2ddb30143ecf'
+default['macapps']['zoomus']['pkg']['checksum'] = '16bb50e5bcefce9b63c2c81a418ad3cf7239b4c2b980b34e4e59ee5fe1d37db6'
