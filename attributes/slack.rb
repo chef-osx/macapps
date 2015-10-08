@@ -1,2 +1,2 @@
-default['macapps']['slack']['version'] = '1.1.0'
-default['macapps']['slack']['checksum'] = '456d6b246798d119a02618ef04ff859fb2d033af093939311840ac75f957d907'
+default['macapps']['slack']['version'] = '1.1.4'
+default['macapps']['slack']['checksum'] = 'b3a6c2b651cf98d7bb817c063b3fbc9c5bb7f7ecfeb766359d1d85147267aa28'
