@@ -18,11 +18,11 @@
 
 remote_file "#{Chef::Config[:file_cache_path]}/savosx_he_r.zip" do
   source 'http://downloads.sophos.com/home-edition/savosx_he_r.zip'
-  checksum '86bcd0a10de1dc2455f3f1e9330c0b083e30ce435822daaa7ea10f04f63f5f10'
+  checksum '5f93d370ec752f7c2ee4d5ccd75c33b86bb06859b21771314328b26f77c01fa1'
   notifies :run, "execute[unzip-sophos]"
 end
 
 execute "unzip-sophos" do
-  command "unzip #{Chef::Config[:file_cache_path]}/savosx_he_r.zip -d /Applications"
+  command "unzip -o #{Chef::Config[:file_cache_path]}/savosx_he_r.zip -d /Applications"
   action :nothing
 end

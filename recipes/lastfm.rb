@@ -23,6 +23,6 @@ remote_file "#{Chef::Config[:file_cache_path]}/Last.fm-2.1.36.zip" do
 end
 
 execute "unzip-lastfm" do
-  command "unzip #{Chef::Config[:file_cache_path]}/Last.fm-2.1.36.zip -d /Applications"
+  command "unzip -o #{Chef::Config[:file_cache_path]}/Last.fm-2.1.36.zip -d /Applications"
   action :nothing
 end

@@ -18,7 +18,7 @@
 
 remote_file "#{Chef::Config[:file_cache_path]}/SpotifyInstaller.zip" do
   source 'http://download.spotify.com/SpotifyInstaller.zip'
-  checksum 'c5fa2d1d6389cd4680bbcc2476a3c015e195ed7e4909ef68e2cd36722b61ce1d'
+  checksum '1b822c4cc6d0299c9441620ce3fcd680d5e168cbe5d05d30590348640d54aeee'
   notifies :run, "execute[unzip-spotify]", :immediately
 end
 
