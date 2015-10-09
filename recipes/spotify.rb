@@ -23,6 +23,6 @@ remote_file "#{Chef::Config[:file_cache_path]}/SpotifyInstaller.zip" do
 end
 
 execute "unzip-spotify" do
-  command "unzip #{Chef::Config[:file_cache_path]}/SpotifyInstaller.zip -d /Applications"
+  command "unzip -o #{Chef::Config[:file_cache_path]}/SpotifyInstaller.zip -d /Applications"
   action :nothing
 end
