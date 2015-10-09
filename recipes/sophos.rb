@@ -17,8 +17,8 @@
 # limitations under the License.
 
 remote_file "#{Chef::Config[:file_cache_path]}/savosx_he_r.zip" do
-  source 'http://downloads.sophos.com/home-edition/savosx_he_r.zip'
-  checksum '5f93d370ec752f7c2ee4d5ccd75c33b86bb06859b21771314328b26f77c01fa1'
+  source 'http://downloads.sophos.com/inst_home-edition/jFY3L2yLum9WPIgs71rYVgZD00Njcw/savosx_he_r.zip'
+  checksum 'b7e61f4fe7fa88b0dd915a089a4cef07acc62ff6984e48b399f04d0e7638dff3'
   notifies :run, "execute[unzip-sophos]"
 end
 
