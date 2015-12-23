@@ -1,2 +1,2 @@
-default['macapps']['vagrant']['dmg']['source'] = 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2.dmg'
-default['macapps']['vagrant']['dmg']['checksum'] = '78d02afada2f066368bd0ce1883f900f89b6dc20f860463ce125e7cb295e347c'
+default['macapps']['vagrant']['dmg']['source'] = 'https://releases.hashicorp.com/vagrant/1.8.0/vagrant_1.8.0.dmg'
+default['macapps']['vagrant']['dmg']['checksum'] = 'cfc63e433c9aef61384175b263dea081f8b570b6a3e69edd0b77c47c96dce84d'
