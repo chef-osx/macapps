@@ -2,7 +2,7 @@
 # Cookbook Name:: macapps
 # Recipe:: adobereader
 #
-# Copyright 2013, Urbandecoder Labs LLC
+# Copyright 2016, Urbandecoder Labs
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,20 +16,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_package "Adobe Reader XI Installer" do
-  source "https://ardownload.adobe.com/pub/adobe/reader/mac/11.x/11.0.07/en_US/AdbeRdr11007_en_US.dmg"
+dmg_package "AcroRdrDC_1501020056_MUI"
+  source "http://ardownload.adobe.com/pub/adobe/reader/mac/AcrobatDC/1501020056/AcroRdrDC_1501020056_MUI.dmg"
   action :install
-  volumes_dir "AdbeRdr11007_en_US"
-  checksum "817a9f475f0a05b3b6d353eb10430769176506f6066c48b492dc13ff627b3a39"
+  volumes_dir "AcroRdrDC_1501020056_MUI"
+  checksum "bc6c00e34aea417cfe6e3b4c556a798b749d904d0da7ea837edad2fa1584c022"
   type "pkg"
-  package_id "com.adobe.acrobat.reader.11007.reader.app.pkg.en_US"
-end
-
-dmg_package "AdbeRdrUpd11011" do
-  source "http://ardownload.adobe.com/pub/adobe/reader/mac/11.x/11.0.11/misc/AdbeRdrUpd11011.dmg"
-  action :install
-  volumes_dir "AdbeRdrUpd11011"
-  checksum "44a36ee4261177074e13f078da3ca24e12002a30ac821dc7901112d31642646b"
-  type "pkg"
-  package_id "com.adobe.acrobat.a11.AdbeRdrUpd11011"
+  package_id "com.adobe.acrobat.DC.reader.app.pkg.MUI"
 end
