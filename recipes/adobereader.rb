@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_package "AcroRdrDC_1501020056_MUI"
+dmg_package "AcroRdrDC_1501020056_MUI" do
   source "http://ardownload.adobe.com/pub/adobe/reader/mac/AcrobatDC/1501020056/AcroRdrDC_1501020056_MUI.dmg"
   action :install
   volumes_dir "AcroRdrDC_1501020056_MUI"
