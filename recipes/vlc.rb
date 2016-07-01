@@ -21,7 +21,7 @@ dmg_properties = node['macapps']['vlc']['dmg']
 dmg_package "VLC" do
   dmg_name "vlc-#{dmg_properties['version']}"
   volumes_dir "vlc-#{dmg_properties['version']}"
-  source "http://download.videolan.org/vlc/#{dmg_properties['version']}/macosx/vlc-#{dmg_properties['version']}.dmg"
+  source "https://get.videolan.org/vlc/#{dmg_properties['version']}/macosx/vlc-#{dmg_properties['version']}.dmg"
   checksum dmg_properties['checksum']
   action :install
 end
