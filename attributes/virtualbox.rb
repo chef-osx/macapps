@@ -1,2 +1,2 @@
-default['macapps']['virtualbox']['dmg']['source'] = 'http://download.virtualbox.org/virtualbox/4.3.30/VirtualBox-4.3.30-101610-OSX.dmg'
-default['macapps']['virtualbox']['dmg']['checksum'] = '1616b058f232683e74ecd85ed60aebf3c27901893b371596e66e9080a1493ccb'
+default['macapps']['virtualbox']['dmg']['source'] = 'http://download.virtualbox.org/virtualbox/5.0.24/VirtualBox-5.0.24-108355-OSX.dmg'
+default['macapps']['virtualbox']['dmg']['checksum'] = 'bcea02df51a93b34b22e405b86460ac404d68ee736f268dcdd12fe3a60921e11'

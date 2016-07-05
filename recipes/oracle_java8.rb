@@ -1,8 +1,8 @@
 #
 # Cookbook Name:: macapps
-# Recipe:: vlc
+# Recipe:: oracle_java8
 #
-# Copyright 2013, Urbandecoder Labs LLC
+# Copyright 2016, Paul Krohn
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,12 +16,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-dmg_properties = node['macapps']['vlc']['dmg']
+remote_file "#{Chef::Config[:file_cache_path]}/jdk-macosx-x64.dmg" do
+  source node['macapps']['oracle_java8']['download_url']
+  checksum node['macapps']['oracle_java8']['checksum']
+  headers 'Cookie' => 'oraclelicense=accept-securebackup-cookie'
+  action :create
+end
 
-dmg_package "VLC" do
-  dmg_name "vlc-#{dmg_properties['version']}"
-  volumes_dir "vlc-#{dmg_properties['version']}"
-  source "https://get.videolan.org/vlc/#{dmg_properties['version']}/macosx/vlc-#{dmg_properties['version']}.dmg"
-  checksum dmg_properties['checksum']
+dmg_package "JDK 8 Update #{node['macapps']['oracle_java8']['update']}" do
+  source "file://#{Chef::Config[:file_cache_path]}/jdk-macosx-x64.dmg"
+  type 'pkg'
   action :install
+  package_id node['macapps']['oracle_java8']['package_id']
 end
